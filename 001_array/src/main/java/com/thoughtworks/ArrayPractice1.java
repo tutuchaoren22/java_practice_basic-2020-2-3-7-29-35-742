@@ -11,6 +11,14 @@ public class ArrayPractice1 {
      */
     public static void printArrayReverse() {
         int[] array = new int[]{1, 2, 3};
-
+        String newArray ="[";
+        for (int i =array.length-1; i>=0; i--) {
+            if(i!=0){
+                newArray += array[i]+",";
+            }else {
+                newArray += array[i] +"]";
+            }
+        }
+        System.out.println(newArray);
     }
 }
