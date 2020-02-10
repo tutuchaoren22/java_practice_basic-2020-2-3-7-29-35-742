@@ -7,15 +7,15 @@ public class ArrayPractice3 {
      */
     public static int[] filterZero(int[] array) {
         int numberOfZero = 0;
-        for (int i=0;i<array.length;i++){
-            if(array[i]==0){
-                numberOfZero +=1;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == 0) {
+                numberOfZero += 1;
             }
         }
-        int[] newArray = new int[array.length-numberOfZero];
+        int[] newArray = new int[array.length - numberOfZero];
         int index = 0;
-        for (int i=0;i<array.length;i++){
-            if(array[i]!=0){
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] != 0) {
                 newArray[index] = array[i];
                 index++;
             }

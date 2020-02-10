@@ -7,21 +7,21 @@ public class ArrayPractice4 {
      */
     public static int[] insert(int number) {
         int[] array = new int[]{1, 20, 50, 100};
-        int[] newArray = new int[array.length+1];
+        int[] newArray = new int[array.length + 1];
         int indexToAdd = array.length;
-        for(int i=0;i<array.length;i++){
-            if(array[i]>number){
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] > number) {
                 indexToAdd = i;
                 break;
             }
         }
-        for (int i =0;i<newArray.length;i++){
-            if (i<indexToAdd){
+        for (int i = 0; i < newArray.length; i++) {
+            if (i < indexToAdd) {
                 newArray[i] = array[i];
-            }else if(i==indexToAdd){
+            } else if (i == indexToAdd) {
                 newArray[i] = number;
-            }else {
-                newArray[i] = array[i-1];
+            } else {
+                newArray[i] = array[i - 1];
             }
         }
         return newArray;
